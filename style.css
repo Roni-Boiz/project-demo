@@ -1,0 +1,99 @@
+*{
+    font-family: Calibri, sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('ui/bg_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box{
+   /* background-image: url('ui/bg_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  */
+    background-color: white;
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    border-radius: 5px;
+    border: gray solid 1px;
+    height: 550px;
+    margin: 100px 150px;
+}
+nav{
+    margin: 0;
+}
+nav ul{
+    float: right;
+}
+.header{
+    grid-column-start: 3;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 30px ;
+    padding-right:40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.box .header nav ul li button{
+    border-radius: 20px;
+    background-color: #86bbff;
+    border-style: none;
+    padding:8px 40px ;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+#logo{
+    grid-column-start: 1;
+    height: 200px;
+    width: 200px;
+    grid-row-start: 2;
+    margin-left: 50px;
+}
+#title{
+    color: #927ffc;
+    font-size: 50px;
+    grid-row-start: 2;
+    margin-top: 70px;
+}
+#city{
+    font-weight: lighter;
+}
+#ALSS{
+    font-size:40px ;
+    grid-column: 1/span 2;
+    margin-left: 100px;
+}
+#mission{
+    font-size:10px;
+    font-weight: bold;
+}
+#apartment{
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+    margin-right: 60px;
+    grid-row: 2/span 3;
+}
+#content{
+    font-size: 15px;
+    margin: 100px;
+    margin-top: 0;
+    grid-column: 1/span 2;
+}
+.footer{
+	height: 30px;
+    width:100%;
+    background:linear-gradient(to right,#86bbff,#927ffc);
+	text-align: center;
+	font-size: 10px;
+	padding-top: 20px;
+}
