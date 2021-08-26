@@ -4,8 +4,9 @@
 }
 
 .navigationBar{
+    position: relative;
     height: 60px;
-    background-color: #03002e;
+    background-color: #03002e;  
 }
 
 .signin{

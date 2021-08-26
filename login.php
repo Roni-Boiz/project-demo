@@ -1,3 +1,62 @@
+<?php session_start(); ?>
+
+<?php require_once('inc/connection.php') ?>
+
+<?php
+
+    if(isset($_POST['login']))
+    {  
+        
+        $errors = array();
+
+        if(!isset($_POST['username']) || strlen(trim($_POST['username']))< 1 )
+        {
+            $errors[] = 'Username is invalid';
+        }
+
+        if(!isset($_POST['password']) || strlen(trim($_POST['password'])) < 1 )
+        {
+            $errors[] = 'Password is invalid';
+        }
+
+        if (empty($errors)){
+
+            $username = mysqli_real_escape_string($connection, $_POST ['username']);
+
+            $password = mysqli_real_escape_string($connection, $_POST ['password']);
+
+            $hPassword = sha1($password);
+
+            $query = "SELECT * FROM  user_account 
+            WHERE username = '{$username}'
+            AND Password = '{$hPassword}'
+            LIMIT 1";
+
+            $resultSet = mysqli_query($connection, $query);
+
+            if ($resultSet) {
+
+                 if ( mysqli_num_rows ($resultSet) == 1) 
+                {
+                    $user = mysqli_fetch_assoc($resultSet);
+                    $_SESSION['user_id'] = $user['id'] ;
+                    $_SESSION['username'] = $user['username'];
+
+                    header('Location: user.php');
+                } else {
+                    $errors[] = 'Invalid Username Password';
+                }
+            } else {
+                $errors[] = 'Database query failed';
+            }
+        }
+    }
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +67,7 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-
+    
     <div class="navigationBar">
         
     </div>
@@ -18,7 +77,6 @@
         <div class="box">
         </div>
         <form action="login.php" method = "post">
-
             <div class="element">
                 <label>Username : </label>
                 <input type="text" placeholder="Username" name = "username" autofocus>
@@ -32,5 +90,8 @@
             </div>
         </form>
     </div>
+    
 </body>
 </html>
+
+<?php mysqli_close($connection); ?>
