@@ -126,6 +126,9 @@ header nav ul span{
 header nav ul .dropdown{
     position:relative;
 }
+header nav ul ul li{
+    border-bottom:gray solid 1px ;
+}
 i{
     margin-right: 15px;
 }
