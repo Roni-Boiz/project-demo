@@ -4,8 +4,11 @@
     box-sizing: border-box;
     font:Calibri, sans-serif;
 }
+body{
+    background-color:gray;
+}
 .slide nav{
-    margin-top:55px;
+    margin-top:52px;
     width: 250px;
     position: absolute;
     top: 0;
@@ -116,7 +119,7 @@ header nav ul li a:hover{
 .logo button{
     background-color: #110b2e;
     border: 0;
-    margin: 5px 0 0 15px;
+    margin: 5px;
 }
 header nav .logo img{
     object-fit: cover;
@@ -124,7 +127,7 @@ header nav .logo img{
 header nav ul ul{
     display: none; 
     position: absolute;
-    width: 150px;
+    width: 130px;
     background: #211a49;
 }
 header nav ul .dropdown:hover ul{
