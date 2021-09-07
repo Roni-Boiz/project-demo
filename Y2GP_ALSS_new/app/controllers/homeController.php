@@ -32,6 +32,12 @@ class homeController extends controller{
         $result=$this->view->users = $this->model->readLogin($username, $password);
         $result ? $this->view->render('userView') : $this->view->render('loginView');
     }
+    // view profile resident
+    public function viewProfile(){
+        $this->loadModel('profileModel');
+        $this->view->users = $this->model->readTable();
+        $this->view->render('profileView');
+    }
 
     public function test(){
         $this->view->render('testView');

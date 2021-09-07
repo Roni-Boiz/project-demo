@@ -3,7 +3,7 @@
 class controller{
 
     function __construct(){
-        // parent::__construct();
+        //parent::__construct();
         require 'view.php';
         $this->view = new view();
     }
@@ -17,7 +17,4 @@ class controller{
        
     }
 
-    // public function changeController($controllerName){
-    //     parent::changeController($controllerName);
-    // }
 }
