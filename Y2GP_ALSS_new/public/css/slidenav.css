@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font:Calibri, sans-serif;
 }
+.grid3{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
 .slide nav{
     margin-top:52px;
     width: 230px;
@@ -25,7 +29,7 @@
     font-family: arial;
     font-size: 15px;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 0;
     height: 50px;
     color: white;
     transition: 0.5s ease;
@@ -36,8 +40,8 @@
 .slide nav ul ul{
     display: none; 
     position: absolute;
-    left: 235px;
-    width: 230px;
+    left: 232px;
+    width: 200px;
     top:0;
     background: #211a49;
     box-shadow: 2px 3px 5px rgb(105, 105, 105);
@@ -47,23 +51,15 @@
     right: 20px;
     font-size: 5px;
 }
-.slide nav ul .dropdown{
+.slide nav ul li.dropdown{
     position: relative;
-    padding: 0 10px;
+    padding: 0;
 }
-.slide nav ul li{
-    position: relative;
-    padding-left: 10px;
-}
+
 .slide nav ul .dropdown:hover ul{
     display: initial;
 } 
-.content{
-    width: 100%;
-    grid-column-start: 2;
-    display: grid;
-    grid-template-columns: 235px 1fr 1fr ;
-}
+
 /* header new */
 header{
     font-weight:5px; 
@@ -87,7 +83,7 @@ header nav{
     margin: 1px;
     width: 100%;
     display:grid;
-    grid-template-columns: 1fr 1fr 200px;
+    grid-template-columns: 1fr 200px;
 }
 header nav ul {
     grid-column: 3/span 4;
@@ -153,8 +149,5 @@ header nav ul ul li{
     /* .slide{
         visibility: hidden;
     } */
-    .content{
-        display:grid;
-        grid-template-columns: 250px 1fr;
-    } 
+
 }
