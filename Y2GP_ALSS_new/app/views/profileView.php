@@ -1,4 +1,4 @@
-<?php include('slidenav.php'); ?>
+<!-- <?php include('slidenav.php'); ?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
