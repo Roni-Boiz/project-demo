@@ -131,8 +131,6 @@ nav ul li a:hover{
     color: black;
 }
 .hawlockbody{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     background-color: white;
     margin:5%;
     border-radius: 5px;
