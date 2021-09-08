@@ -65,7 +65,7 @@
             </ul>
         </nav>
     </div>
-</div>
+</div>  
    <div class="content">
         
 </body>
