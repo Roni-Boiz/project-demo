@@ -127,9 +127,6 @@ nav ul li a:hover{
     width: 150px;
     grid-column: 2;
 }
-.hawlockbody h4, i{
-    color: black;
-}
 .hawlockbody{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -140,6 +137,10 @@ nav ul li a:hover{
     margin-top: 0;
     align-items: center;
 }
+.hawlockbody h4, i{
+    color: black;
+}
+
 /* form */
 .hawlockbody .form1{
     grid-column: 2/span 3;
