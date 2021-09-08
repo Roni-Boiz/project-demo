@@ -13,14 +13,14 @@
 <body style="background-color: gray; background-image:none">
     <div class="hawlockhead"><img src="../../public/img/image.png" alt="" id="logo"/><h1 id="title">Hawlock <span id="city">City</span></h1></div>
     <div class="hawlockbody"> 
-        <i class="fa fa-user-circle-o fa-lg" aria-hidden="true"><h4>
+        <i class="fa fa-user-circle-o fa-lg" ><h4>
         <?php
         if ($this->users->num_rows > 0) {
         // output data of each row
         while($row = $this->users->fetch_assoc()) {
             echo $row["ApartmentNo"]
         ?></h4>
-        <input type="submit" onclick = "fun()"value="Edit Profile">
+        <!-- <input type="submit" onclick = "fun()"value="Edit Profile"> -->
         
         <form action="#" class="form1">
             <label for="fname">First Name</label>
