@@ -11,7 +11,7 @@
 <body style="background-color: gray; background-image:none;">
     <div class="hawlockhead"><img src="../../public/img/image.png" alt="" id="logo"/><h1 id="title">Hawlock <span id="city">City</span></h1></div>
     <div class="hawlockbody"> 
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAA
     </div>
     
 </body> 
