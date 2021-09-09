@@ -11,6 +11,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
       classorigin = "anonymous"
     />
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -20,13 +24,15 @@
                 <form action= "loginSuccess" class="sign-in-form" method= "POST">
                     <h2 class="title">Sign In</h2>
                     <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" name = "username">
+                        <i id="icon" class="fas fa-user"></i>
+                        <input id="form_name" type="text" placeholder="Username" name = "username">
+                        <span class="error_form" id="name_error_message"></span>
                     </div>
 
                     <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" name = "password">
+                        <i id="icon" class="fas fa-lock"></i>
+                        <input id="form_password" type="password" placeholder="Password" name = "password">
+                        <span class="error_form" id="password_error_message"></span>
                     </div>
 
                     <input type="submit" class="loginbtn btn solid" value="Log In">
@@ -43,27 +49,32 @@
 
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input class="fname" type="text" placeholder="First Name">
+                        <input id="form_fname" class="fname" type="text" placeholder="First Name">
+                        <span class="error_form" id="fname_error_message"></span>
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input class="lname" type="text" placeholder="Last Name">
+                        <input id="form_sname" class="lname" type="text" placeholder="Last Name">
+                        <span class="error_form" id="sname_error_message"></span>
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="email">
+                        <input id="form_email" type="email" placeholder="email">
+                        <span class="error_form" id="email_error_message"></span>
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="text" placeholder="password">
+                        <input id="form_rpassword" type="text" placeholder="password">
+                        <span class="error_form" id="rpassword_error_message"></span>
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="text" placeholder="Confirm Password">
+                        <input id="form_retype_password" type="text" placeholder="Confirm Password">
+                        <span class="error_form" id="retype_password_error_message"></span>
                     </div>
 
                     <input type="submit" class="btn solid" value="Sign Up"/>
@@ -77,7 +88,6 @@
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
-                    
                 </form>
             </div>
         </div> 
@@ -96,7 +106,7 @@
                     </p>
                     <button class="btn transparent" id="sign-up-button">Sign Up</button>
                </div>
-               <img src="../../public/img/bg_1.jpg" alt="" class="image">
+               <img src="../../public/img/login-img_t.png" alt="" class="image">
            </div>
 
            <div class="panel right-panel">
@@ -112,12 +122,13 @@
                     </p>
                     <button class="btn transparent" id="sign-in-button">Sign In</button>
                </div>
-               <img src="../../public/img/bg_1.jpg" alt="" class="image">
+               <img src="../../public/img/signin-img_t.png" alt="" class="image">
            </div>
        </div>
     </div>
+
     
-    <script src="../../public/js/login.js"></script>
+    <script type="text/javascript" src="../../public/js/login.js"></script>
 </body>
 </html>
 
