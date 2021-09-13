@@ -40,10 +40,6 @@
     padding: 20px;
 }
 
-
-
-
-
 /* -------------------form ---------------------*/
 .form1{
     grid-column: 2;
@@ -62,7 +58,7 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-.hawlockbody input[type=submit] {
+.hawlockbody.form1 input[type=submit] {
     width: 100px;
     background-color: #2a225a;
     color: white;

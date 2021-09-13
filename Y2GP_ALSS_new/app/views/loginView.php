@@ -44,51 +44,7 @@
                     </div>
                     
                 </form>
-                <form action="#" class="sign-up-form">
-                    <h2 class="title">Sign Up</h2>
-
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input id="form_fname" class="fname" type="text" placeholder="First Name">
-                        <span class="error_form" id="fname_error_message"></span>
-                    </div>
-
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input id="form_sname" class="lname" type="text" placeholder="Last Name">
-                        <span class="error_form" id="sname_error_message"></span>
-                    </div>
-
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input id="form_email" type="email" placeholder="email">
-                        <span class="error_form" id="email_error_message"></span>
-                    </div>
-
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input id="form_rpassword" type="text" placeholder="password">
-                        <span class="error_form" id="rpassword_error_message"></span>
-                    </div>
-
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input id="form_retype_password" type="text" placeholder="Confirm Password">
-                        <span class="error_form" id="retype_password_error_message"></span>
-                    </div>
-
-                    <input type="submit" class="btn solid" value="Sign Up"/>
-                    <p class="social-text">Or Sign Up with Social Platform</p>
-
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </form>
+                
             </div>
         </div> 
         
@@ -109,46 +65,12 @@
                <img src="../../public/img/login-img_t.png" alt="" class="image">
            </div>
 
-           <div class="panel right-panel">
-               <div class="content">
-                   <h3>One of Us?</h3>
-                   <p>
-                       Lorem ipsum dolor sit amet, consectetur 
-                       adipisicing elit. Consequatur amet ipsum 
-                       beatae odio obcaecati soluta placeat autem
-                        veniam commodi nihil! Harum reprehenderit 
-                        repudiandae nam a magni, ad dolorum 
-                        dignissimos nemo!
-                    </p>
-                    <button class="btn transparent" id="sign-in-button">Sign In</button>
-               </div>
-               <img src="../../public/img/signin-img_t.png" alt="" class="image">
-           </div>
+           
        </div>
     </div>
+
 
     
     <script type="text/javascript" src="../../public/js/login.js"></script>
 </body>
 </html>
-
-
-
-<!-- <div class="signin">
-        <h3 class="title1">Sign In</h3>
-        <div class="box">
-        </div>
-        <form action="loginSuccess" method = "post">
-            <div class="element">
-                <label>Username : </label>
-                <input type="text" placeholder="Username" name = "username" autofocus>
-            </div>
-            <div class="element">
-                <label>Password : </label>
-                <input type="password" placeholder="Enter Password" name ="password">
-            </div>
-            <div class="element">
-                <input type="submit" value="Submit" name= "login" class="submit">
-            </div>
-        </form>
-    </div> -->
