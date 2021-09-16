@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigationBar{
+    position: relative;
+    height: 60px;
+    background-color: #03002e;  
+}
+
+.signin{
+    position: relative;
+    top: 200px;
+    left: 38%;
+    color: white;
+    width: 200px;
+}
+
+.signin .title1{
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+
+.signin label{
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+.signin input{
+    position: absolute;
+    left: 115px;
+    width: 250px;
+}
+
+.signin .element{
+    margin: 20px;
+}
+
+.signin .element .submit{
+    width: 75px;   
+    height: 20px;
+    border-radius: 100px;
+    border: none;
+}
+
+.signin .element .submit:hover{
+    color: white;
+    background-color: #090088;
+    border-radius: 10px;
+}
+
+.signin .box{
+    border-radius: 10px;
+    position: absolute;
+    border: #014769;
+    height: 270px;
+    width: 500px;
+    left: -60px;
+    top: -55px;
+    background-color: #03002e;
+    z-index: -1;
+}
