@@ -1,0 +1,81 @@
+
+.hawlockhead{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 100px 2fr;
+    align-items: center;
+    background-color: white;
+    margin:2%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.hawlockhead #title{
+    color: #2a225a;
+    font-size: 30px;
+    margin-top: 0px;
+    padding-left: 20px;
+}
+.hawlockhead #logo{
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    grid-column: 2;
+    margin: -20px;
+}
+.hawlockbody{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(255, 255, 255);
+    margin:2%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 0;
+    align-items: center;
+}
+.hawlockbody i,h4{
+    color: black;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 20px;
+}
+
+
+
+/* //1111 */
+
+/* -------------------form ---------------------*/
+.form1{
+    grid-column: 2;
+    font-size:small;
+    background-color: rgb(180, 179, 179);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.hawlockbody input[type=text]{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.hawlockbody.form1 input[type=submit] {
+    width: 100px;
+    background-color: #2a225a;
+    color: white;
+    padding: 5px 0px;
+    margin: 4px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    grid-column: 3;
+}
+.hawlockbody input[type=submit]:hover {
+    background-color: #02000c;
+}
+.hawlockbody label{
+    margin-left: 5px;
+}
